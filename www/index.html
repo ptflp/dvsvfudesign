@@ -143,7 +143,7 @@
         <div class="container g-max-width-800 u-bg-overlay__inner g-color-white">
           <h2 class="text-center text-uppercase h2 g-font-weight-700 g-font-size-40 g-font-size-40--md g-color-white g-mb-30 g-mb-70--md">Конкурс «Арктическая Якутия и Дальний Восток как регионы партнеры Республики Корея»</h2>
         </div>
-        <div class="container g-max-width-750 u-bg-overlay__inner g-color-white ">
+        <div class="container g-max-width-750 u-bg-overlay__inner g-color-white g-bg-black-opacity-0_5 g-pa-20">
           <div class="row g-mx-minus-5">
             <div class="col-md-4 g-px-5 g-mb-20 g-mb-0--md">
               <div class="media">
@@ -594,18 +594,28 @@
 
       <!-- Section Content -->
       <section id="about" class="u-bg-overlay g-bg-img-hero g-bg-darkblue-opacity-0_7--after g-py-100" style="background-image: url(assets/img-temp/1920x1080/img1.jpg);">
-        <div class="container u-bg-overlay__inner">
+        <div class="container u-bg-overlay__inner g-bg-black-opacity-0_5 g-pa-20">
           <div class="text-center g-mb-70">
             <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-color-white g-mb-30">Условия
               <span class="g-font-weight-400 g-font-size-40">|</span>
               <span class="g-color-primary"> участия </span></h2>
 
-            <p class="g-color-white">Целевая аудитория - участники:</p>
+            <p class="g-font-weight-700 g-color-primary">Целевая аудитория - участники:</p>
             <ul class="g-color-white text-left">
                <li>Граждане Республики Корея имеющие степень бакалавра, окончившие не ранее 2010 года, а также студенты последнего года обучения по программе бакалавриата.</li>
                <li>Владеющие русским и английским языками на уровне не ниже В1. </li>
                <li>Имеющие интерес и мотивацию к изучению регионов Дальнего Востока и Северо-Востока Российской Федерации и развития международного сотрудничества с азиатскими странами, в том числе с республикой Корея. </li>
              </ul> 
+
+            <p class="g-font-weight-700 g-color-primary">Сроки проведения конкурса: </p>
+            <p class="g-color-white ">Конкурс проводится с 1 декабря 2017г. по 15 февраля 2018г.</p>
+            <ul class="g-color-white text-left">
+               <li>Прием конкурсных работ – с 1 декабря 2017г. по 15 февраля 2018г на интернет-сайте http://dv.s-vfu.ru   </li>
+               <li>Объявление победителей –  1 марта 2018 г.  </li>
+             </ul>
+
+            <p class="g-font-weight-700 g-color-primary"> Победители:</p>
+            <p class="g-color-white text-left">Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  </p>
 
           </div>
 
@@ -1170,27 +1180,27 @@
             <div class="col-lg-5 g-order-2 g-order-1--lg mx-auto">
               <form>
                 <div class="form-group g-mb-20">
-                  <input id="firstName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" name="firstName" type="text" placeholder="Имя">
+                  <input id="firstName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="firstName" type="text" placeholder="Имя">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="lastName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" name="lastName" type="text" placeholder="Фамилия">
+                  <input id="lastName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="lastName" type="text" placeholder="Фамилия">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="address" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" name="speciality" type="text" placeholder="Направление/Специальность">
+                  <input id="address" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="speciality" type="text" placeholder="Направление/Специальность">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="course" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" name="course" type="text" placeholder="Курс">
+                  <input id="course" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="course" type="text" placeholder="Курс">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="email" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" name="email" type="email" placeholder="Email">
+                  <input id="email" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="email" type="email" placeholder="Email">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="phone" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" name="phone" type="text" placeholder="Телефон">
+                  <input id="phone" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="phone" type="text" placeholder="Телефон">
                 </div>
 
                 <button class="btn btn-lg text-uppercase u-btn-white g-font-weight-700 g-font-size-11 g-color-white--hover g-bg-primary--hover g-py-18 d-block mx-auto" type="submit">Зарегистрироваться</button>
@@ -1342,7 +1352,7 @@
       </footer>
       <!-- End Footer -->
 
-      <a class="js-go-to u-go-to-v1" href="#"
+      <a class="js-go-to u-go-to-v1 g-color-white--hover g-bg-primary--hover" href="#"
          data-type="fixed"
          data-position='{
            "bottom": 15,
