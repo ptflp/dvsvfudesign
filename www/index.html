@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
   <head>
     <!-- Title -->
     <title>Конкурс «Арктическая Якутия и Дальний Восток как регионы партнеры Республики Корея»</title>
@@ -36,10 +36,56 @@
   </head>
 
   <body>
-    <main>
-      <!-- Header v1 -->
-      <header id="js-header" class="u-header u-header--sticky-top u-header--change-appearance g-z-index-9999"
-              data-header-fix-moment="100">
+    <main id="app">
+   <!-- Header -->
+    <header id="js-header" class="u-header u-header--sticky-top u-header--toggle-section u-header--change-appearance"
+            data-header-fix-moment="300">
+      <!-- Top Bar -->
+      <div class="u-header__section u-header__section--hidden u-header__section--dark g-bg-darkblue-opacity-0_7 g-py-10">
+        <div class="container">
+          <div class="row flex-column flex-md-row justify-content-between align-items-center text-uppercase g-font-weight-600 g-color-white">
+            <div class="col-auto g-pos-rel g-px-15">
+              <ul class="list-inline g-overflow-hidden g-font-size-12 g-mt-minus-10 g-mx-minus-4 mb-0">
+                <li class="list-inline-item g-mx-4 g-mt-10" @mouseover="langEng">
+                  <a class="d-flex align-items-center g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="#">
+                    <svg class="mr-2 g-ml-minus-6" xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                      <defs>
+                        <clipPath id="a">
+                          <path fill-opacity=".67" d="M-85.333 0h682.67v512h-682.67z"></path>
+                        </clipPath>
+                      </defs>
+                      <g clip-path="url(#a)" transform="translate(80) scale(.94)">
+                        <g stroke-width="1pt">
+                          <path fill="#006" d="M-256 0H768.02v512.01H-256z"></path>
+                          <path d="M-256 0v57.244l909.535 454.768H768.02V454.77L-141.515 0H-256zM768.02 0v57.243L-141.515 512.01H-256v-57.243L653.535 0H768.02z" fill="#fff"></path>
+                          <path d="M170.675 0v512.01h170.67V0h-170.67zM-256 170.67v170.67H768.02V170.67H-256z" fill="#fff"></path>
+                          <path d="M-256 204.804v102.402H768.02V204.804H-256zM204.81 0v512.01h102.4V0h-102.4zM-256 512.01L85.34 341.34h76.324l-341.34 170.67H-256zM-256 0L85.34 170.67H9.016L-256 38.164V0zm606.356 170.67L691.696 0h76.324L426.68 170.67h-76.324zM768.02 512.01L426.68 341.34h76.324L768.02 473.848v38.162z" fill="#c00"></path>
+                        </g>
+                      </g>
+                    </svg>
+                    English
+                  </a>
+                </li>
+                <li class="list-inline-item g-mx-4 g-mt-10">|</li>
+                <li class="list-inline-item g-mx-4 g-mt-10" @mouseover="langRu">
+                  <a class="d-flex align-items-center g-color-main g-color-primary--hover g-text-underline--none--hover g-py-8 g-px-20" href="#">
+                    <svg class="mr-2 g-ml-minus-6" xmlns="http://www.w3.org/2000/svg" height="11" width="27" viewBox="0 0 640 480">
+                      <g fill-rule="evenodd" stroke-width="1pt">
+                        <path fill="#fff" d="M0 0h640v480H0z"></path>
+                        <path fill="#0039a6" d="M0 160.003h640V480H0z"></path>
+                        <path fill="#d52b1e" d="M0 319.997h640V480H0z"></path>
+                      </g>
+                    </svg>
+                    Russian
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Top Bar -->
+
         <div class="light-theme u-header__section g-bg-darkblue-opacity-0_7 g-transition-0_3 g-py-10"
              data-header-fix-moment-exclude="light-theme g-bg-darkblue-opacity-0_7"
              data-header-fix-moment-classes="dark-theme g-bg-white-opacity-0_9">
@@ -105,13 +151,13 @@
             </div>
           </nav>
         </div>
-      </header>
-      <!-- End Header v1 -->
+    </header>
+    <!-- End Header -->
 
       <!-- Section Content -->
-      <section id="home" class="g-bg-img-hero g-pos-rel u-bg-overlay g-bg-darkblue-opacity-0_7--after g-pt-110" style="background-image: url(assets/img-temp/1920x1281/img1.jpg);">
+      <section id="home" class="g-bg-img-hero g-pos-rel u-bg-overlay g-bg-darkblue-opacity-0_7--after g-pt-150" style="background-image: url(assets/img-temp/1920x1281/img1.jpg);">
         <div class="container g-max-width-750 u-bg-overlay__inner g-color-white g-mb-10">
-          <!-- Countdown v4 -->
+          <!-- Countdown v4 
           <div class="js-countdown text-center text-uppercase u-countdown-v4 g-mb-10 g-mb-10--md"
                data-end-date="2017/12/01"
                data-month-format="%m"
@@ -142,7 +188,7 @@
           <!-- End Countdown v4 -->
         </div>
         <div class="container g-max-width-800 u-bg-overlay__inner g-color-white">
-          <h2 class="text-center text-uppercase h2 g-font-weight-700 g-font-size-40 g-font-size-40--md g-color-white g-mb-30 g-mb-70--md">Конкурс «Арктическая Якутия и Дальний Восток как регионы партнеры Республики Корея»</h2>
+          <h2 class="text-center text-uppercase h2 g-font-weight-700 g-font-size-40 g-font-size-40--md g-color-white g-mb-30 g-mb-70--md g-pt-80">{{title}}</h2>
         </div>
         <div class="container g-max-width-750 u-bg-overlay__inner g-color-white g-bg-black-opacity-0_5 g-pa-20">
           <div class="row g-mx-minus-5">
@@ -153,8 +199,8 @@
                 </div>
 
                 <div class="media-body text-uppercase">
-                  <p class="g-mb-5"><strong class="g-font-size-14 g-color-white-opacity-0_5">Дата мероприятия:</strong></p>
-                  <h3 class="h3 text-uppercase g-font-size-15 g-color-white mb-0">18:30, 1 декабря, 2017</h3>
+                  <p class="g-mb-5"><strong class="g-font-size-14 g-color-white-opacity-0_5">{{mDateText}}</strong></p>
+                  <h3 class="h3 text-uppercase g-font-size-15 g-color-white mb-0">{{mDate}}</h3>
                 </div>
               </div>
             </div>
@@ -166,14 +212,14 @@
                 </div>
 
                 <div class="media-body text-uppercase">
-                  <p class="g-mb-5"><strong class="g-font-size-14 g-color-white-opacity-0_5">Место:</strong></p>
-                  <h3 class="h3 text-uppercase g-font-size-15 g-color-white mb-0">Северо-Восточный федеральный университет</h3>
+                  <p class="g-mb-5"><strong class="g-font-size-14 g-color-white-opacity-0_5">{{mLocText}}</strong></p>
+                  <h3 class="h3 text-uppercase g-font-size-15 g-color-white mb-0">{{mLoc}}</h3>
                 </div>
               </div>
             </div>
 
             <div class="col-md-3 text-md-right g-px-5">
-              <a class="btn btn-lg text-uppercase u-btn-white g-font-weight-700 g-font-size-11 g-color-white--hover g-bg-primary--hover g-brd-none rounded-0 g-py-18" href="#registration">Регистрация</a>
+              <a class="btn btn-lg text-uppercase u-btn-white g-font-weight-700 g-font-size-11 g-color-white--hover g-bg-primary--hover g-brd-none rounded-0 g-py-18" href="#registration">{{mReg}}</a>
             </div>
           </div>
         </div>
@@ -192,15 +238,14 @@
                 <div class="js-slide g-bg-img-hero g-min-height-50vh" style="background-image: url(assets/img-temp/1000x667/img3.jpg);"></div>
               </div>
             </div>
-
             <div class="col-md-6 d-flex g-min-height-50vh g-theme-color-gray-dark-v1 g-py-80 g-py-20--md g-px-50">
               <div class="align-self-center w-100">
-                <h2 class="text-uppercase g-font-weight-700 g-font-size-20 g-color-primary g-mb-10">Уважаемые студенты – бакалавры университетов Республики Корея!</h2>
-                <p class="g-font-size-14">Российско-южнокорейское сотрудничество динамично развивается по многим направлениям деятельности в  области экономики, бизнеса, торговли, образования и науки, культуры и искусства. При этом возрастает роль межрегионального сотрудничества, в особенности с регионами Северо-Востока, Дальнего Востока РФ. </p>
-                <p class="g-font-size-14 mb-0">Конкурс «Арктическая Якутия и Дальний Восток как регионы-партнеры Республики Корея» проводится с целью формирования у южнокорейских студентов более глубокого представления и знания о Дальнем Востоке России и самом крупном по территории субъекте РФ - Республике Саха, для выявления талантливой молодежи, способной внести вклад в прорывное развитие взаимовыгодных экономических, культурных отношений между нашими странами и регионами. А также для развития межвузовской академической мобильности студентов, преподавателей и сотрудников вузов. </p>
-                <p class="g-font-size-14 mb-0">Приглашаем вас к активному участию в конкурсе, к обмену идеями и предложениями! </p>
-                <p class="g-font-size-14 mb-0">С уважением,</p>
-                <p class="g-font-size-14 mb-0">Оргкомитет Конкурса</p>
+                <h2 class="text-uppercase g-font-weight-700 g-font-size-20 g-color-primary g-mb-10">{{gText1}}</h2>
+                <p class="g-font-size-14">{{gText2}} </p>
+                <p class="g-font-size-14 mb-0">{{gText3}} </p>
+                <p class="g-font-size-14 mb-0">{{gText4}} </p>
+                <p class="g-font-size-14 mb-0">{{gText5}}</p>
+                <p class="g-font-size-14 mb-0">{{gText6}}</p>
 
               </div>
             </div>
@@ -597,26 +642,26 @@
       <section id="about" class="u-bg-overlay g-bg-img-hero g-bg-darkblue-opacity-0_7--after g-py-100" style="background-image: url(assets/img-temp/1920x1080/img1.jpg);">
         <div class="container u-bg-overlay__inner g-bg-black-opacity-0_5 g-pa-20">
           <div class="text-center g-mb-70">
-            <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-color-white g-mb-30">Условия
+            <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-color-white g-mb-30">{{termsText1}}
               <span class="g-font-weight-400 g-font-size-40">|</span>
-              <span class="g-color-primary"> участия </span></h2>
+              <span class="g-color-primary"> {{termsText2}} </span></h2>
 
-            <p class="g-font-weight-700 g-color-primary">Целевая аудитория - участники:</p>
+            <p class="g-font-weight-700 g-color-primary">{{termsText3}}</p>
             <ul class="g-color-white text-left">
-               <li>Граждане Республики Корея имеющие степень бакалавра, окончившие не ранее 2010 года, а также студенты последнего года обучения по программе бакалавриата.</li>
-               <li>Владеющие русским и английским языками на уровне не ниже В1. </li>
-               <li>Имеющие интерес и мотивацию к изучению регионов Дальнего Востока и Северо-Востока Российской Федерации и развития международного сотрудничества с азиатскими странами, в том числе с республикой Корея. </li>
+               <li>{{termsText4}}</li>
+               <li>{{termsText5}}</li>
+               <li>{{termsText6}} </li>
              </ul> 
 
-            <p class="g-font-weight-700 g-color-primary">Сроки проведения конкурса: </p>
-            <p class="g-color-white ">Конкурс проводится с 1 декабря 2017г. по 15 февраля 2018г.</p>
+            <p class="g-font-weight-700 g-color-primary">{{termsText7}} </p>
+            <p class="g-color-white ">{{termsText8}}</p>
             <ul class="g-color-white text-left">
-               <li>Прием конкурсных работ – с 1 декабря 2017г. по 15 февраля 2018г на интернет-сайте http://dv.s-vfu.ru   </li>
-               <li>Объявление победителей –  1 марта 2018 г.  </li>
+               <li>{{termsText9}}   </li>
+               <li>{{termsText10}} </li>
              </ul>
 
-            <p class="g-font-weight-700 g-color-primary"> Победители:</p>
-            <p class="g-color-white text-left">Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  </p>
+            <p class="g-font-weight-700 g-color-primary"> {{termsText11}}</p>
+            <p class="g-color-white text-left">{{termsText12}} </p>
 
           </div>
 
@@ -1401,12 +1446,100 @@
     <script src="/assets/js/components/hs.carousel.js"></script>
     <script src="/assets/js/components/gmap/hs.map.js"></script>
     <script src="/assets/js/components/hs.go-to.js"></script>
+    <script src="/assets/js/components/hs.dropdown.js"></script>
 
     <!-- JS Customization -->
     <script src="/assets/js/custom.js"></script>
+    <script src="/assets/js/vue.js"></script>
 
     <!-- JS Plugins Init. -->
     <script>
+      new Vue ({
+        el: '#app',
+        data: {
+          title: "Конкурс «Арктическая Якутия и Дальний Восток как регионы партнеры Республики Корея»",
+
+          mDateText: 'Дата мероприятия:',
+          mDate: '18:30, 1 декабря, 2017',
+          mLocText: 'Место:',
+          mLoc: 'Северо-Восточный федеральный университет',
+          mReg: 'Регистрация',
+
+          gText1: 'Уважаемые студенты – бакалавры университетов Республики Корея!',
+          gText2: 'Российско-южнокорейское сотрудничество динамично развивается по многим направлениям деятельности в  области экономики, бизнеса, торговли, образования и науки, культуры и искусства. При этом возрастает роль межрегионального сотрудничества, в особенности с регионами Северо-Востока, Дальнего Востока РФ.',
+          gText3: 'Конкурс «Арктическая Якутия и Дальний Восток как регионы-партнеры Республики Корея» проводится с целью формирования у южнокорейских студентов более глубокого представления и знания о Дальнем Востоке России и самом крупном по территории субъекте РФ - Республике Саха, для выявления талантливой молодежи, способной внести вклад в прорывное развитие взаимовыгодных экономических, культурных отношений между нашими странами и регионами. А также для развития межвузовской академической мобильности студентов, преподавателей и сотрудников вузов.',
+          gText4: 'Приглашаем вас к активному участию в конкурсе, к обмену идеями и предложениями!',
+          gText5: 'С уважением',
+          gText6: 'Оргкомитет Конкурса',
+
+
+          termsText1 :'Условия',
+          termsText2 :'участия',
+          termsText3:'Целевая аудитория - участники:',
+          termsText4:'Граждане Республики Корея имеющие степень бакалавра, окончившие не ранее 2010 года, а также студенты последнего года обучения по программе бакалавриата.',
+          termsText5:'Владеющие русским и английским языками на уровне не ниже В1.',
+          termsText6:'Имеющие интерес и мотивацию к изучению регионов Дальнего Востока и Северо-Востока Российской Федерации и развития международного сотрудничества с азиатскими странами, в том числе с республикой Корея.',
+          termsText7:'Сроки проведения конкурса:',
+          termsText8:'Конкурс проводится с 1 декабря 2017г. по 15 февраля 2018г.',
+          termsText9:'Прием конкурсных работ – с 1 декабря 2017г. по 15 февраля 2018г на интернет-сайте http://dv.s-vfu.ru',
+          termsText10:'Объявление победителей –  1 марта 2018 г.',
+          termsText11:' Победители:',
+          termsText12:'Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  ',         
+                
+        },
+        methods: {
+          langEng(){
+            this.title='Arctic Yakutia and the Far East as partner-regions of the Republic of Korea'
+          
+          this.gText1= 'Dear bachelors of universities of the Republic of Korea!',
+          this.gText2= 'Russian-Korean cooperation is dynamically developing in many areas of activity in the field of economics, business, trade, education and science, culture and art. At the same time, the role of interregional cooperation, especially with the regions of the Northeast, the Far East of the Russian Federation, is growing.',
+          this.gText3= 'The competition "Arctic Yakutia and the Far East as partner-regions of the Republic of Korea" is held with the aim of forming a more profound understanding and knowledge of the Far East of Russia and the largest in the territory of the Russian Federation, the Republic of Sakha, for the identification of talented youth capable of contributing to the breakthrough development of mutually beneficial economic and cultural relations between our countries and regions. And also for the development of interuniversity academic mobility of students, teachers and university staff.',
+          this.gText4= 'We invite you to participate actively in the competition, to exchange your ideas and suggestions! ',
+          this.gText5= 'Yours faithfully,',
+          this.gText6= 'Organizing Committee of the competition',
+
+
+          this.termsText1 ='Terms of ',
+          this.termsText2 ='participation ',
+          this.termsText3='Target audience - participants: ',
+          this.termsText4='Citizens of the Republic of Korea with Bachelor degree, graduated no earlier than 2010 as well as students of the last year under the Bachelor’s degree program.',
+          this.termsText5='having Russian and languages level not lower than B1.',
+          this.termsText6='having an interest and motivation to study the regions of the Far East and the North-East of the Russian Federation and develop international cooperation with Asian countries, including the Republic of Korea.',
+          this.termsText7='Terms of the competition: ',
+          this.termsText8='The competition is held from December 1, 2017 till February 15, 2018.',
+          this.termsText9='Reception of competitive works - since December, 1st, 2017г. till February 15, 2018 online http://dv.s-vfu.ru',
+          this.termsText10='announcement of the winners - March 1, 2018',
+          this.termsText11=' Winners:',
+          this.termsText12='Participants who take 1, 2 and 3 places in the contest, will receive a certificate which covers the tuition fee for the chosen NEFU Master’s degree program in such fields as Economics, Management, Finance and Credit and one-year language learning (Russian language) for the completion of the main program (if it’s needed), as well as payment of a monthly scholarship in the amount corresponding with the scholarship of state-funded students in Russian Federation, payment for the accommodation in the NEFU dormitory and medical insurance for the entire period of study.'           
+                
+          },
+          langRu(){
+            this.title='Конкурс «Арктическая Якутия и Дальний Восток как регионы партнеры Республики Корея»'
+            
+          this.gText1= 'Уважаемые студенты – бакалавры университетов Республики Корея!',
+          this.gText2= 'Российско-южнокорейское сотрудничество динамично развивается по многим направлениям деятельности в  области экономики, бизнеса, торговли, образования и науки, культуры и искусства. При этом возрастает роль межрегионального сотрудничества, в особенности с регионами Северо-Востока, Дальнего Востока РФ.',
+          this.gText3= 'Конкурс «Арктическая Якутия и Дальний Восток как регионы-партнеры Республики Корея» проводится с целью формирования у южнокорейских студентов более глубокого представления и знания о Дальнем Востоке России и самом крупном по территории субъекте РФ - Республике Саха, для выявления талантливой молодежи, способной внести вклад в прорывное развитие взаимовыгодных экономических, культурных отношений между нашими странами и регионами. А также для развития межвузовской академической мобильности студентов, преподавателей и сотрудников вузов.',
+          this.gText4= 'Приглашаем вас к активному участию в конкурсе, к обмену идеями и предложениями!',
+          this.gText5= 'С уважением',
+          this.gText6= 'Оргкомитет Конкурса',
+
+
+          this.termsText1 ='Условия',
+          this.termsText2 ='участия',
+          this.termsText3='Целевая аудитория - участники:',
+          this.termsText4='Граждане Республики Корея имеющие степень бакалавра, окончившие не ранее 2010 года, а также студенты последнего года обучения по программе бакалавриата.',
+          this.termsText5='Владеющие русским и английским языками на уровне не ниже В1.',
+          this.termsText6='Имеющие интерес и мотивацию к изучению регионов Дальнего Востока и Северо-Востока Российской Федерации и развития международного сотрудничества с азиатскими странами, в том числе с республикой Корея.',
+          this.termsText7='Сроки проведения конкурса:',
+          this.termsText8='Конкурс проводится с 1 декабря 2017г. по 15 февраля 2018г.',
+          this.termsText9='Прием конкурсных работ – с 1 декабря 2017г. по 15 февраля 2018г на интернет-сайте http://dv.s-vfu.ru',
+          this.termsText10='Объявление победителей –  1 марта 2018 г.',
+          this.termsText11=' Победители:',
+          this.termsText12='Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  '      
+                
+          }
+        }
+      })
       // initialization of google map
       function initMap() {
         $.HSCore.components.HSGMap.init('.js-g-map');
@@ -1513,6 +1646,12 @@
           $.HSCore.components.HSTabs.init('[role="tablist"]');
         }, 200);
       });
+        // initialization of HSDropdown component
+        $.HSCore.components.HSDropdown.init($('[data-dropdown-target]'), {
+          afterOpen: function(){
+            $(this).find('input[type="search"]').focus();
+          }
+        });
     </script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtt1z99GtrHZt_IcnK-wryNsQ30A112J0&callback=initMap" async></script>
