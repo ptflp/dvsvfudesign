@@ -1153,7 +1153,7 @@
       <section id="registration" class="g-py-100 g-bg-blue">
         <div class="container">
           <div class="text-center g-mb-70">
-            <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-mb-30 g-color-white">Регистрация
+            <h2 class="text-uppercase g-line-height-1 g-font-weight-700 g-font-size-30 g-mb-30 g-color-white">{{mReg}}
               <span class="g-color-primary"></span></h2>
 
           </div>
@@ -1226,27 +1226,27 @@
             <div class="col-lg-5 g-order-2 g-order-1--lg mx-auto">
               <form>
                 <div class="form-group g-mb-20">
-                  <input id="firstName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="firstName" type="text" placeholder="Имя">
+                  <input id="firstName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="firstName" type="text" :placeholder="formName">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="lastName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="lastName" type="text" placeholder="Фамилия">
+                  <input id="lastName" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="lastName" type="text" :placeholder="formSName">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="address" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="speciality" type="text" placeholder="Направление/Специальность">
+                  <input id="address" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="speciality" type="text" :placeholder="formDirection">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="course" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="course" type="text" placeholder="Курс">
+                  <input id="course" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="course" type="text" :placeholder="formCourse">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="email" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="email" type="email" placeholder="Email">
+                  <input id="email" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="email" type="email" :placeholder="formEmail">
                 </div>
 
                 <div class="form-group g-mb-20">
-                  <input id="phone" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="phone" type="text" placeholder="Телефон">
+                  <input id="phone" class="form-control u-shadow-v25 g-font-size-12 g-theme-color-gray-dark-v3 g-placeholder-inherit g-brd-none rounded-0 g-pa-20" required name="phone" type="text" :placeholder="formPhone">
                 </div>
                 <div class="form-group g-mb-20">
                   <label class="u-check g-pl-25 g-color-white">
@@ -1254,11 +1254,11 @@
                     <div class="u-check-icon-checkbox-v4 g-absolute-centered--y g-left-0 g-bg-white">
                       <i class="g-color-primary fa" data-check-icon=""></i>
                     </div>
-                    Согласен(-на) с <a href="#about" class="g-color-lightred">условиями участия</a> и обработку персональных данных.
+                    {{formTerms1}} <a href="#about" class="g-color-lightred">{{formTerms2}}</a> {{formTerms3}}
                   </label>
                 </div>
 
-                <button class="btn btn-lg text-uppercase u-btn-white g-font-weight-700 g-font-size-11 g-color-white--hover g-bg-primary--hover g-py-18 d-block mx-auto" type="submit">Зарегистрироваться</button>
+                <button class="btn btn-lg text-uppercase u-btn-white g-font-weight-700 g-font-size-11 g-color-white--hover g-bg-primary--hover g-py-18 d-block mx-auto" type="submit">{{formRegister}}</button>
               </form>
             </div>
           </div>
@@ -1484,13 +1484,32 @@
           termsText9:'Прием конкурсных работ – с 1 декабря 2017г. по 15 февраля 2018г на интернет-сайте http://dv.s-vfu.ru',
           termsText10:'Объявление победителей –  1 марта 2018 г.',
           termsText11:' Победители:',
-          termsText12:'Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  ',         
+          termsText12:'Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  ',
+
+         
+           
+          formName: 'Имя',
+          formSName: 'Фамилия',
+          formDirection: 'Направление/Специальность',
+          formCourse: 'Курс',
+          formEmail: 'Email',
+          formPhone: 'Телефон',
+          formTerms1: 'Согласен(-на)',
+          formTerms2: 'условиями участия',
+          formTerms3: 'и обработку персональных данных.',
+          formRegister: 'Зарегистрироваться'
                 
         },
         methods: {
           langEng(){
             this.title='Arctic Yakutia and the Far East as partner-regions of the Republic of Korea'
           
+          this.mDateText= 'Date:',
+          this.mDate= '18:30, 1 декабря, 2017',
+          this.mLocText= 'Location:',
+          this.mLoc= 'North-Eastern Federal University',
+          this.mReg= 'Registration',
+
           this.gText1= 'Dear bachelors of universities of the Republic of Korea!',
           this.gText2= 'Russian-Korean cooperation is dynamically developing in many areas of activity in the field of economics, business, trade, education and science, culture and art. At the same time, the role of interregional cooperation, especially with the regions of the Northeast, the Far East of the Russian Federation, is growing.',
           this.gText3= 'The competition "Arctic Yakutia and the Far East as partner-regions of the Republic of Korea" is held with the aim of forming a more profound understanding and knowledge of the Far East of Russia and the largest in the territory of the Russian Federation, the Republic of Sakha, for the identification of talented youth capable of contributing to the breakthrough development of mutually beneficial economic and cultural relations between our countries and regions. And also for the development of interuniversity academic mobility of students, teachers and university staff.',
@@ -1510,11 +1529,29 @@
           this.termsText9='Reception of competitive works - since December, 1st, 2017г. till February 15, 2018 online http://dv.s-vfu.ru',
           this.termsText10='announcement of the winners - March 1, 2018',
           this.termsText11=' Winners:',
-          this.termsText12='Participants who take 1, 2 and 3 places in the contest, will receive a certificate which covers the tuition fee for the chosen NEFU Master’s degree program in such fields as Economics, Management, Finance and Credit and one-year language learning (Russian language) for the completion of the main program (if it’s needed), as well as payment of a monthly scholarship in the amount corresponding with the scholarship of state-funded students in Russian Federation, payment for the accommodation in the NEFU dormitory and medical insurance for the entire period of study.'           
+          this.termsText12='Participants who take 1, 2 and 3 places in the contest, will receive a certificate which covers the tuition fee for the chosen NEFU Master’s degree program in such fields as Economics, Management, Finance and Credit and one-year language learning (Russian language) for the completion of the main program (if it’s needed), as well as payment of a monthly scholarship in the amount corresponding with the scholarship of state-funded students in Russian Federation, payment for the accommodation in the NEFU dormitory and medical insurance for the entire period of study.',
+
+          this.formName= 'Name',
+          this.formSName= 'Second name',
+          this.formDirection= 'Specialization',
+          this.formCourse= 'Year student',
+          this.formEmail= 'Email',
+          this.formPhone= 'Phone'
+          this.formTerms1= 'I agree with',
+          this.formTerms2= 'Terms of participation ',
+          this.formTerms3= 'processing of Personal Data',
+          this.formRegister: 'Register'
                 
           },
           langRu(){
             this.title='Конкурс «Арктическая Якутия и Дальний Восток как регионы партнеры Республики Корея»'
+
+
+          this.mDateText= 'Дата мероприятия:',
+          this.mDate= '18:30, 1 декабря, 2017',
+          this.mLocText= 'Место:',
+          this.mLoc= 'Северо-Восточный федеральный университет',
+          this.mReg= 'Регистрация',
             
           this.gText1= 'Уважаемые студенты – бакалавры университетов Республики Корея!',
           this.gText2= 'Российско-южнокорейское сотрудничество динамично развивается по многим направлениям деятельности в  области экономики, бизнеса, торговли, образования и науки, культуры и искусства. При этом возрастает роль межрегионального сотрудничества, в особенности с регионами Северо-Востока, Дальнего Востока РФ.',
@@ -1537,6 +1574,16 @@
           this.termsText11=' Победители:',
           this.termsText12='Участники, занявшие 1, 2 и 3 места в конкурсе, получают в качестве приза сертификат, покрывающий оплату за обучение по выбранной программе магистратуры СВФУ по таким направлениям, как "Экономика", "Менеджмент", «Финансы и кредит" и годичной языковой подготовки (русский язык) к усвоению основной программы (в случае необходимости), а также оплату ежемесячной стипендии в размере, соответствующем стипендиям бюджетного обучения в РФ, оплату за проживание в общежитии СВФУ и медицинское страхование на весь период обучения.  '      
                 
+           
+          this.formName= 'Имя',
+          this.formSName= 'Фамилия',
+          this.formDirection= 'Направление/Специальность',
+          this.formCourse= 'Курс',
+          this.formEmail= 'Email',
+          this.formPhone= 'Телефон',
+          this.formTerms1= 'Согласен(-на)',
+          this.formTerms2= 'условиями участия',
+          this.formTerms3= 'и обработку персональных данных.'
           }
         }
       })
