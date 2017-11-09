@@ -1312,10 +1312,10 @@
           <div class="u-bg-overlay__inner g-width-780 mx-auto">
             <div class="u-heading-v8-2 g-mb-30">
               <h2 class="h1 text-uppercase u-heading-v8__title g-font-weight-700 g-font-size-30 g-color-white g-mb-30">
-                Обратная <span class="g-font-size-40">|</span> <span class="g-color-primary">связь</span></h2>
+                {{feedback1}} <span class="g-font-size-40">{{feedback2}}</span> <span class="g-color-primary">{{feedback3}}</span></h2>
             </div>
 
-            <p class="g-color-white g-mb-60">Свяжитесь с нами</p>
+            <p class="g-color-white g-mb-60">{{feedback4}}</p>
 
             <address class="text-uppercase g-font-size-13 g-overflow-x-hidden g-mb-70 g-py-5">
               <div class="row g-mx-minus-5 row g-mx-minus-5 g-bg-black-opacity-0_5 g-pa-20">
@@ -1357,19 +1357,19 @@
                     <div class="align-self-center w-100">
                       <form>
                         <div class="form-group g-mb-20">
-                          <input id="inputGroup1_1" class="form-control g-font-size-12 g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-darkblue-opacity-0_7 g-bg-gray-dark-v1--focus g-brd-none rounded-0 g-pa-20" type="text" placeholder="Ваше имя" required="">
+                          <input id="inputGroup1_1" class="form-control g-font-size-12 g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-darkblue-opacity-0_7 g-bg-gray-dark-v1--focus g-brd-none rounded-0 g-pa-20" type="text" :placeholder="formName" required="">
                         </div>
 
                         <div class="form-group g-mb-20">
-                          <input id="inputGroup1_2" class="form-control g-font-size-12 g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-darkblue-opacity-0_7 g-bg-gray-dark-v1--focus g-brd-none rounded-0 g-pa-20" type="email" placeholder="Ваш email" required="">
+                          <input id="inputGroup1_2" class="form-control g-font-size-12 g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-darkblue-opacity-0_7 g-bg-gray-dark-v1--focus g-brd-none rounded-0 g-pa-20" type="email" :placeholder="formEmail" required="">
                         </div>
 
                         <div class="form-group g-mb-20">
-                          <textarea id="inputGroup1_3" class="form-control g-resize-none g-font-size-12 g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-darkblue-opacity-0_7 g-bg-gray-dark-v1--focus g-brd-none rounded-0 g-pa-20" rows="7" placeholder="Сообщение" required=""></textarea>
+                          <textarea id="inputGroup1_3" class="form-control g-resize-none g-font-size-12 g-theme-color-gray-dark-v2 g-placeholder-inherit g-bg-darkblue-opacity-0_7 g-bg-gray-dark-v1--focus g-brd-none rounded-0 g-pa-20" rows="7" :placeholder="formMessage" required=""></textarea>
                         </div>
 
                         <div class="text-right">
-                          <button class="btn u-btn-primary btn-lg text-uppercase g-font-weight-700 g-font-size-12 rounded-0 g-px-20 g-py-15 mb-0" type="submit" role="button">Отправить</button>
+                          <button class="btn u-btn-primary btn-lg text-uppercase g-font-weight-700 g-font-size-12 rounded-0 g-px-20 g-py-15 mb-0" type="submit" role="button">{{formSend}}</button>
                         </div>
                       </form>
                     </div>
@@ -1497,7 +1497,13 @@
           formTerms1: 'Согласен(-на)',
           formTerms2: 'условиями участия',
           formTerms3: 'и обработку персональных данных.',
-          formRegister: 'Зарегистрироваться'
+          formRegister: 'Зарегистрироваться',
+          formSend: 'Отправить',
+
+          feedback1: 'Обратная',
+          feedback2: '|',
+          feedback3: 'связь',
+          feedback4: 'Свяжитесь с нами'
                 
         },
         methods: {
@@ -1540,7 +1546,14 @@
           this.formTerms1= 'I agree with',
           this.formTerms2= 'Terms of participation ',
           this.formTerms3= 'processing of Personal Data',
-          this.formRegister: 'Register'
+          this.formRegister= 'Register',
+          this.formSend= 'Send',
+          this.formMessage ='Message',
+
+          this.feedback1= '',
+          this.feedback2= '',
+          this.feedback3= 'Feedback',
+          this.feedback4= 'Contact with us'
                 
           },
           langRu(){
@@ -1583,7 +1596,15 @@
           this.formPhone= 'Телефон',
           this.formTerms1= 'Согласен(-на)',
           this.formTerms2= 'условиями участия',
-          this.formTerms3= 'и обработку персональных данных.'
+          this.formTerms3= 'и обработку персональных данных.',
+          this.formRegister= 'Зарегистрироваться',
+          this.formSend= 'Отправить',
+          this.formMessage ='Сообщение',
+
+          this.feedback1= 'Обратная',
+          this.feedback2= '|',
+          this.feedback3= 'связь',
+          this.feedback4= 'Свяжитесь с нами'
           }
         }
       })
