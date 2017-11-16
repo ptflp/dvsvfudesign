@@ -1,1 +1,57 @@
 /* Add here all your css styles (customizations) */
+.u-datepicker-v1 .ui-datepicker-calendar th span, .u-datepicker-v1 .ui-datepicker-calendar th a, .u-datepicker-v1 .ui-datepicker-calendar td span, .u-datepicker-v1 .ui-datepicker-calendar td a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    color: #555;
+    background-color: transparent;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    padding: 0;
+}
+@media (min-width: 768px) {
+  .u-datepicker-v1 .ui-datepicker-title {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 50px;
+    margin-right: 50px; }
+  .u-datepicker-v1 .ui-datepicker-prev, .u-datepicker-v1 .ui-datepicker-next {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; }
+  .u-datepicker-v1 .ui-datepicker-calendar {
+    border-collapse: separate;
+    border-spacing: 4px; }
+  .u-datepicker-v1 .ui-datepicker-calendar th,
+  .u-datepicker-v1 .ui-datepicker-calendar td {
+    padding: 0px;
+    }
+  .u-datepicker-v1 .ui-datepicker-calendar th span,
+  .u-datepicker-v1 .ui-datepicker-calendar th a,
+  .u-datepicker-v1 .ui-datepicker-calendar td span,
+  .u-datepicker-v1 .ui-datepicker-calendar td a {
+    font-size: 13px;
+    } }
+.table-hover tbody tr:hover {
+    background-color: #6ab8ee;
+    border-color: #6ab8ee;
+    color: white;
+}
+.table-hover tbody tr:hover a{
+    color: white;
+}
+.g-bg-tripple-block-gradient-after::after {
+    background: linear-gradient(to bottom, rgba(238, 238, 238, 0.62), #eeeeee);
+    height: 50px;
+}
+.pechenke-red {
+    color: #fff;
+    background-color: #C65563;
+}
+.pechenke-green {
+    color: #fff;
+    background-color: #0AC9B6;
+}
